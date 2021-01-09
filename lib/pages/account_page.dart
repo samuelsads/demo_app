@@ -5,7 +5,6 @@ import 'package:app_example/models/usuario.dart';
 import 'package:app_example/services/photo_service.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:pinch_zoom_image_updated/pinch_zoom_image_updated.dart';
 import 'package:http/http.dart' as http;
 import 'package:mime_type/mime_type.dart';
 import 'package:http_parser/http_parser.dart';
@@ -62,41 +61,6 @@ class _AccountPageState extends State<AccountPage> {
     }
 
     return Center(child:Image.asset('assets/no-image.png'));
-
-    if (foto != null) {
-      return new PinchZoomImage(
-        image: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(10)),
-          child: new Image.asset(
-            foto.path,
-          ),
-        ),
-        zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
-        hideStatusBarWhileZooming: true,
-        onZoomStart: () {
-          print('Zoom started');
-        },
-        onZoomEnd: () {
-          print('Zoom finished');
-        },
-      );
-    }
-    return PinchZoomImage(
-      image: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(10)),
-        child: Image.asset(
-          'assets/no-image.png',
-        ),
-      ),
-      zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
-      hideStatusBarWhileZooming: true,
-      onZoomStart: () {
-        print('Zoom started');
-      },
-      onZoomEnd: () {
-        print('Zoom finished');
-      },
-    );
   }
 
   _processImage(ImageSource type) async {

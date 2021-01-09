@@ -31,7 +31,6 @@ dependencies:
   pull_to_refresh: ^1.6.1
   image_picker:
   provider: ^4.3.2+2
-  pinch_zoom_image_updated: ^0.2.6
   http:
   mime_type: ^0.3.2
 
