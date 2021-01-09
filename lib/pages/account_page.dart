@@ -1,12 +1,15 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:app_example/models/usuario.dart';
+import 'package:app_example/services/photo_service.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:pinch_zoom_image_updated/pinch_zoom_image_updated.dart';
 import 'package:http/http.dart' as http;
 import 'package:mime_type/mime_type.dart';
 import 'package:http_parser/http_parser.dart';
+import 'package:provider/provider.dart';
 
 class AccountPage extends StatefulWidget {
   @override
@@ -15,6 +18,7 @@ class AccountPage extends StatefulWidget {
 
 class _AccountPageState extends State<AccountPage> {
   File foto;
+  Proceso proceso;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -22,11 +26,12 @@ class _AccountPageState extends State<AccountPage> {
 
   @override
   Widget build(BuildContext context) {
-    //final photoService = Provider.of<PhotoService>(context);
+    proceso  = ModalRoute.of(context).settings.arguments;
+    
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        title: Text('Cuenta'),
+        title: Text(proceso.nombre),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -102,7 +107,11 @@ class _AccountPageState extends State<AccountPage> {
 
     if (pickedFile.path != null) {
       foto = File(pickedFile.path);
-      //await subirImagen(foto);
+      await subirImagen(foto, proceso.uuidProceso);
+      final photoService = Provider.of<PhotoService>(context, listen: false);
+      photoService.getUid = proceso.uuidProceso;
+      photoService.getUid;
+      //Navigator.of(context).pop();
     }
 
     setState(() {});
@@ -110,14 +119,17 @@ class _AccountPageState extends State<AccountPage> {
 
 
 
-  Future<String> subirImagen(File imagen) async {
+  Future<String> subirImagen(File imagen, String uid) async {
+    //final url = Uri.parse(
+    //    'http://192.168.1.77:3000');
     final url = Uri.parse(
-        'http://192.168.1.77:3000');
+        'http://gfhjk-env.eba-mpvxbqa4.us-east-1.elasticbeanstalk.com/file');
     final mimeType = mime(imagen.path).split('/');
 
     final imageUploadRequest = http.MultipartRequest('POST', url);
+    imageUploadRequest.fields['data'] =uid;
 
-    final file = await http.MultipartFile.fromPath('file', imagen.path,
+    final file = await http.MultipartFile.fromPath('photo', imagen.path,
         contentType: MediaType(mimeType[0], mimeType[1]));
 
     imageUploadRequest.files.add(file);
