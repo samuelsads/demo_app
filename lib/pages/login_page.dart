@@ -58,8 +58,8 @@ class __FormStateState extends State<_FormState> {
       padding: EdgeInsets.symmetric(horizontal: 50),
       child: Column(children: <Widget>[
         CustomInput(
-          icon: Icons.mail_outline,
-          placeHolder: 'Correo electrónico',
+          icon: Icons.person,
+          placeHolder: 'Usuario',
           keyboardType: TextInputType.emailAddress,
           textController: emailCtrl,
         ),

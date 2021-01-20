@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:app_example/models/usuario.dart';
 import 'package:app_example/pages/account_page.dart';
 import 'package:app_example/pages/more_information_page.dart';
+import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -25,7 +26,7 @@ class _MainPageState extends State<MainPage> {
       Proceso(uuidProceso: "15", nombre: "San Juan Norte", estatus: 1)
     ])
   ];
-
+  int currentIndex = 0;
   RefreshController _refreshController =
       RefreshController(initialRefresh: false);
 
@@ -43,6 +44,14 @@ class _MainPageState extends State<MainPage> {
               //_processImage(ImageSource.camera);
             },
           ),
+          IconButton(
+            icon: const Icon(Icons.exit_to_app),
+            tooltip: 'Cerrar sessión',
+            onPressed: () {
+              Navigator.pushNamed(context, 'login');
+              //_processImage(ImageSource.camera);
+            },
+          )
         ],
       ),
       body: SmartRefresher(
@@ -55,7 +64,30 @@ class _MainPageState extends State<MainPage> {
         ),
         child: _listViewElements(),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: _floatingActionButton(),
     );
+  }
+
+  Widget _floatingActionButton() {
+    return Container(
+      margin: EdgeInsets.only(bottom: 10),
+      child: FloatingActionButton(
+        child: Icon(Icons.filter_center_focus),
+        backgroundColor: Theme.of(context).primaryColor,
+        onPressed: () => _scanQR(context),
+      ),
+    );
+  }
+
+  _scanQR(BuildContext context) async {
+    dynamic futureString;
+
+    try {
+      futureString = await BarcodeScanner.scan();
+    } catch (e) {
+      futureString = e.toString();
+    }
   }
 
   _processImage(ImageSource type) async {
@@ -84,8 +116,8 @@ class _MainPageState extends State<MainPage> {
       title: Text(usuario.nombre),
       subtitle: Text(usuario.nombre),
       leading: CircleAvatar(
-        child: Text(usuario.nombre.substring(0, 2)),
-        backgroundColor: Colors.blue[200],
+        child: Text(usuario.nombre.substring(0, 2),style: TextStyle( color:Colors.black)),
+        backgroundColor: Colors.purple[100],
       ),
       trailing: Icon(Icons.arrow_right),
       onTap: () {

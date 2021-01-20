@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
         title:'Demo App',
         initialRoute: 'login',
         routes: appRoutes,
+        theme:ThemeData(primaryColor: Color.fromRGBO(125, 64, 4,1) ),
       ),
+      
     );
   }
 }

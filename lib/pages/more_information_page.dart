@@ -40,7 +40,7 @@ class _MoreInformationPageState extends State<MoreInformationPage> {
   }
 
   ListView _listViewElements() {
-    final photoService  = Provider.of<PhotoService>(context, listen: false);
+    final photoService  = Provider.of<PhotoService>(context, listen: true);
     return ListView.separated(
         physics: BouncingScrollPhysics(),
         itemBuilder: (_, i) => _usuarioListTile(usuario.proceso[i], photoService),
@@ -53,9 +53,10 @@ class _MoreInformationPageState extends State<MoreInformationPage> {
       title: Text(proceso.nombre),
       subtitle: Text(proceso.nombre),
       leading: CircleAvatar(
-        child: Text(proceso.nombre.substring(0, 2)),
-        backgroundColor: Colors.blue[200],
+        child: Text(proceso.nombre.substring(0, 2), style: TextStyle( color:Colors.black)),
+        backgroundColor: Colors.purple[100],
       ),
+      trailing: Icon(Icons.photo_camera, color: (proceso.uuidProceso != photoService.getUid)?Colors.red:Colors.green[300],),
       onTap: () {
         if(proceso.uuidProceso != photoService.getUid){
           Navigator.pushNamed(context, 'account', arguments: proceso);
