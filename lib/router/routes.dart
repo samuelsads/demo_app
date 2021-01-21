@@ -1,4 +1,5 @@
 import 'package:app_example/pages/account_page.dart';
+import 'package:app_example/pages/loading_page.dart';
 import 'package:app_example/pages/login_page.dart';
 import 'package:app_example/pages/main_page.dart';
 import 'package:app_example/pages/more_information_page.dart';
@@ -10,4 +11,5 @@ final Map<String, Widget Function(BuildContext)> appRoutes  ={
   'main':(_)=>MainPage(),
   'account':(_)=>AccountPage(),
   'more':(_)=>MoreInformationPage(),
+  'loading':(_)=>LoadingPage(),
 };

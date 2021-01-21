@@ -1,4 +1,5 @@
 import 'package:app_example/helpers/mostrar_alerta.dart';
+import 'package:app_example/preference/preferencias_usuario.dart';
 import 'package:app_example/widgets/blue_botton.dart';
 import 'package:app_example/widgets/custom_input.dart';
 import 'package:app_example/widgets/custom_logo.dart';
@@ -24,11 +25,6 @@ class LoginPage extends StatelessWidget {
                     image: AssetImage('assets/tag-logo.png'),
                     text: 'Demo'),
                 _FormState(),
-                Label(
-                  path: 'register',
-                  question: '¿No tienes cuenta?',
-                  pathText: 'Crea una cuenta ahora!',
-                ),
                 Text(
                   'Términos y condiciones de uso',
                   style: TextStyle(),
@@ -52,6 +48,7 @@ class __FormStateState extends State<_FormState> {
   final passCtrl = TextEditingController();
   @override
   Widget build(BuildContext context) {
+ final prefs= new PreferenciasUsuario();
 
     return Container(
       margin: EdgeInsets.only(top: 40),
@@ -76,6 +73,7 @@ class __FormStateState extends State<_FormState> {
             final user  = emailCtrl.text.trim();
             final pass  = passCtrl.text.trim();
             if(user  == "admin" && pass == "123456"){
+              prefs.token  ='1';
               Navigator.pushReplacementNamed(context, 'main');
             }else{
               mostrarAlerta(context, "Credenciales incorrectas", "Su usuario o su contraseña son incorrectos");

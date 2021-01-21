@@ -1,9 +1,8 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:app_example/models/usuario.dart';
-import 'package:app_example/pages/account_page.dart';
-import 'package:app_example/pages/more_information_page.dart';
+import 'package:app_example/preference/preferencias_usuario.dart';
+
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -32,6 +31,7 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    final prefs = new PreferenciasUsuario();
     return Scaffold(
       appBar: AppBar(
         title: Text("Demo App"),
@@ -48,6 +48,7 @@ class _MainPageState extends State<MainPage> {
             icon: const Icon(Icons.exit_to_app),
             tooltip: 'Cerrar sessión',
             onPressed: () {
+              prefs.token='';
               Navigator.pushNamed(context, 'login');
               //_processImage(ImageSource.camera);
             },
