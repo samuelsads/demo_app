@@ -21,8 +21,8 @@ class _MainPageState extends State<MainPage> {
       Proceso(uuidProceso: "12", nombre: "Santa Ana Norte", estatus: 1),
       Proceso(uuidProceso: "13", nombre: "Belen 1 Norte", estatus: 1),
       Proceso(uuidProceso: "14", nombre: "Belen 2 Norte", estatus: 1),
-      Proceso(uuidProceso: "14", nombre: "Belen 2 Norte", estatus: 1),
-      Proceso(uuidProceso: "15", nombre: "San Juan Norte", estatus: 1)
+      Proceso(uuidProceso: "15", nombre: "Belen 3 Norte", estatus: 1),
+      Proceso(uuidProceso: "16", nombre: "San Juan Norte", estatus: 1)
     ])
   ];
   int currentIndex = 0;
@@ -114,12 +114,7 @@ class _MainPageState extends State<MainPage> {
 
   ListTile _usuarioListTile(Usuario usuario) {
     return ListTile(
-      title: Text(usuario.nombre),
-      subtitle: Text(usuario.nombre),
-      leading: CircleAvatar(
-        child: Text(usuario.nombre.substring(0, 2),style: TextStyle( color:Colors.black)),
-        backgroundColor: Colors.purple[100],
-      ),
+      title: Text(usuario.nombre, style: TextStyle(fontSize: 20),),
       trailing: Icon(Icons.arrow_right),
       onTap: () {
         Navigator.pushNamed(context, 'more', arguments: usuario);

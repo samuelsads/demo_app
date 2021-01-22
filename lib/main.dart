@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         title: 'Demo App',
         initialRoute:(prefs.token!='')?'main': 'login',
         routes: appRoutes,
-        theme: ThemeData(primaryColor: Color.fromRGBO(125, 64, 4, 1)),
+        theme: ThemeData(primaryColor: Color.fromRGBO(125, 4, 65, 1)),
       ),
     );
   }

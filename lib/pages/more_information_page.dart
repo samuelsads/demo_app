@@ -25,7 +25,7 @@ class _MoreInformationPageState extends State<MoreInformationPage> {
     
     return Scaffold(
         appBar: AppBar(
-          title: Text("Procesos"),
+          title: Text(usuario.nombre),
         ),
         body: SmartRefresher(
           controller: _refreshController,
@@ -50,12 +50,7 @@ class _MoreInformationPageState extends State<MoreInformationPage> {
 
   ListTile _usuarioListTile(Proceso proceso, PhotoService photoService) {
     return ListTile(
-      title: Text(proceso.nombre),
-      subtitle: Text(proceso.nombre),
-      leading: CircleAvatar(
-        child: Text(proceso.nombre.substring(0, 2), style: TextStyle( color:Colors.black)),
-        backgroundColor: Colors.purple[100],
-      ),
+      title: Text(proceso.nombre, style:TextStyle(fontSize: 20)),
       trailing: Icon(Icons.photo_camera, color: (proceso.uuidProceso != photoService.getUid)?Colors.red:Colors.green[300],),
       onTap: () {
         if(proceso.uuidProceso != photoService.getUid){
