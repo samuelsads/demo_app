@@ -1,3 +1,7 @@
+// To parse this JSON data, do
+//
+//     final usuario = usuarioFromJson(jsonString);
+
 import 'dart:convert';
 
 Usuario usuarioFromJson(String str) => Usuario.fromJson(json.decode(str));
@@ -6,28 +10,56 @@ String usuarioToJson(Usuario data) => json.encode(data.toJson());
 
 class Usuario {
     Usuario({
+        this.success,
+        this.content,
+        this.error,
+        this.errorDescription,
+    });
+
+    bool success;
+    List<Content> content;
+    String error;
+    dynamic errorDescription;
+
+    factory Usuario.fromJson(Map<String, dynamic> json) => Usuario(
+        success: json["Success"],
+        content: List<Content>.from(json["Content"].map((x) => Content.fromJson(x))),
+        error: json["Error"],
+        errorDescription: json["ErrorDescription"],
+    );
+
+    Map<String, dynamic> toJson() => {
+        "Success": success,
+        "Content": List<dynamic>.from(content.map((x) => x.toJson())),
+        "Error": error,
+        "ErrorDescription": errorDescription,
+    };
+}
+
+class Content {
+    Content({
         this.uuidSeccion,
+        this.tipoCasilla,
         this.nombre,
-        this.estatus,
         this.proceso,
     });
 
-    String uuidSeccion;
+    int uuidSeccion;
+    String tipoCasilla;
     String nombre;
-    int estatus;
     List<Proceso> proceso;
 
-    factory Usuario.fromJson(Map<String, dynamic> json) => Usuario(
+    factory Content.fromJson(Map<String, dynamic> json) => Content(
         uuidSeccion: json["uuid_seccion"],
+        tipoCasilla: json["tipo_casilla"],
         nombre: json["nombre"],
-        estatus: json["estatus"],
         proceso: List<Proceso>.from(json["proceso"].map((x) => Proceso.fromJson(x))),
     );
 
     Map<String, dynamic> toJson() => {
         "uuid_seccion": uuidSeccion,
+        "tipo_casilla": tipoCasilla,
         "nombre": nombre,
-        "estatus": estatus,
         "proceso": List<dynamic>.from(proceso.map((x) => x.toJson())),
     };
 }

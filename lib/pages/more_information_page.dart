@@ -13,12 +13,11 @@ class _MoreInformationPageState extends State<MoreInformationPage> {
   RefreshController _refreshController =
       RefreshController(initialRefresh: false);
 
-  Usuario usuario;
+  Content usuario;
 
   @override
   Widget build(BuildContext context) {
-    final Usuario userData = ModalRoute.of(context).settings.arguments;
-    
+    final Content userData = ModalRoute.of(context).settings.arguments;
     if (userData != null) {
       usuario = userData;
     }
