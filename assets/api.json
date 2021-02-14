@@ -2,7 +2,7 @@
   "Success": true,
   "Content": [
     {
-      "uuid_seccion": 4,
+      "uuid_seccion": 1,
       "tipo_casilla": "BÁSICA",
       "nombre": "4 B",
       "proceso": [
@@ -34,27 +34,118 @@
       ]
     },
     {
-      "uuid_seccion": 5,
+      "uuid_seccion": 2,
       "tipo_casilla": "CONTIGUA",
       "nombre": "4 C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "6",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "7",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "8",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "9",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 3,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "4 C2",
+      "proceso": [
+        {
+          "uuid_proceso": "10",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "11",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "12",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "13",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 4,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "4 C3",
+      "proceso": [
+        {
+          "uuid_proceso": "14",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "15",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "16",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "17",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "18",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 5,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "4 C4",
+      "proceso": [
+        {
+          "uuid_proceso": "19",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "20",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "21",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "22",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "23",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -62,26 +153,31 @@
     },
     {
       "uuid_seccion": 6,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "4 C2",
+      "tipo_casilla": "EXTRAORDINARIA",
+      "nombre": "4 E1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "24",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "25",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "26",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "27",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "28",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -89,31 +185,31 @@
     },
     {
       "uuid_seccion": 7,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "4 C3",
+      "tipo_casilla": "EXTRAORDINARIA",
+      "nombre": "4 E2",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "29",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "30",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "31",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "32",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "33",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -121,31 +217,31 @@
     },
     {
       "uuid_seccion": 8,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "4 C4",
+      "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
+      "nombre": "4 E2C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "34",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "35",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "36",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "37",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "38",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -153,134 +249,38 @@
     },
     {
       "uuid_seccion": 9,
-      "tipo_casilla": "EXTRAORDINARIA",
-      "nombre": "4 E1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 14,
-      "tipo_casilla": "EXTRAORDINARIA",
-      "nombre": "4 E2",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 15,
-      "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
-      "nombre": "4 E2C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 16,
       "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
       "nombre": "4 E2C2",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "39",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "40",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "41",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "42",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "43",
           "nombre": "Diputados RP",
           "estatus": 1
         }
       ]
     },
     {
-      "uuid_seccion": 17,
+      "uuid_seccion": 10,
       "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
       "nombre": "4 E2C3",
       "proceso": [
@@ -312,96 +312,32 @@
       ]
     },
     {
-      "uuid_seccion": 18,
+      "uuid_seccion": 11,
       "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
       "nombre": "4 E2C4",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "44",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "45",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "46",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "47",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 10,
-      "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
-      "nombre": "4 E1C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 11,
-      "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
-      "nombre": "4 E1C2",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
+          "uuid_proceso": "48",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -410,30 +346,30 @@
     {
       "uuid_seccion": 12,
       "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
-      "nombre": "4 E1C3",
+      "nombre": "4 E1C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "49",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "50",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "51",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "52",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "53",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -442,30 +378,670 @@
     {
       "uuid_seccion": 13,
       "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
-      "nombre": "4 E1C4",
+      "nombre": "4 E1C2",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "54",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "55",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "56",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "57",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "58",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 14,
+      "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
+      "nombre": "4 E1C3",
+      "proceso": [
+        {
+          "uuid_proceso": "59",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "60",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "61",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "62",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "63",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 15,
+      "tipo_casilla": "EXTRAORDINARIA CONTIGUA",
+      "nombre": "4 E1C4",
+      "proceso": [
+        {
+          "uuid_proceso": "64",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "65",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "66",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "67",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "68",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 16,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "10 B",
+      "proceso": [
+        {
+          "uuid_proceso": "69",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "70",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "71",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "72",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "73",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 17,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "10 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "74",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "75",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "76",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "77",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "78",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 18,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "13 B",
+      "proceso": [
+        {
+          "uuid_proceso": "79",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "80",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "81",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "82",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "83",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 19,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "13 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "84",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "85",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "86",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "87",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "88",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 20,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "14 B",
+      "proceso": [
+        {
+          "uuid_proceso": "89",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "90",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "91",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "92",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "93",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 21,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "14 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "94",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "95",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "96",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "97",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "98",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 22,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "15 B",
+      "proceso": [
+        {
+          "uuid_proceso": "99",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "100",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "101",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "102",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "103",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 23,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "15 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "104",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "105",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "106",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "107",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "108",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 24,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "16 B",
+      "proceso": [
+        {
+          "uuid_proceso": "109",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "110",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "111",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "112",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "113",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 25,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "16 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "114",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "115",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "116",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "117",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "118",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 16,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "19 B",
+      "proceso": [
+        {
+          "uuid_proceso": "119",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "120",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "121",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "122",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "123",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 27,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "19 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "124",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "125",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "126",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "127",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "128",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 28,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "20 B",
+      "proceso": [
+        {
+          "uuid_proceso": "129",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "130",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "131",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "132",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "133",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 29,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "20 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "134",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "135",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "136",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "137",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "138",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 30,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "21 B",
+      "proceso": [
+        {
+          "uuid_proceso": "139",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "140",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "141",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "142",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "143",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 31,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "21 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "144",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "145",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "146",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "147",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "148",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 32,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "21 C2",
+      "proceso": [
+        {
+          "uuid_proceso": "149",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "150",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "151",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "152",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "153",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 33,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "22 B",
+      "proceso": [
+        {
+          "uuid_proceso": "154",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "155",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "156",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "157",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "158",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -473,31 +1049,31 @@
     },
     {
       "uuid_seccion": 34,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "10 B",
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "22 C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "159",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "160",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "161",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "162",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "163",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -505,31 +1081,191 @@
     },
     {
       "uuid_seccion": 35,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "10 C1",
+      "tipo_casilla": "BÁSICA",
+      "nombre": "23 B",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "164",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "165",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "166",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "167",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "168",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 36,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "23 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "169",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "170",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "171",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "172",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "173",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 37,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "32 B",
+      "proceso": [
+        {
+          "uuid_proceso": "174",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "175",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "176",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "177",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "178",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 38,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "32 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "179",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "180",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "181",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "182",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "183",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 39,
+      "tipo_casilla": "BÁSICA",
+      "nombre": "33 B",
+      "proceso": [
+        {
+          "uuid_proceso": "184",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "185",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "186",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "187",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "188",
+          "nombre": "Diputados RP",
+          "estatus": 1
+        }
+      ]
+    },
+    {
+      "uuid_seccion": 40,
+      "tipo_casilla": "CONTIGUA",
+      "nombre": "33 C1",
+      "proceso": [
+        {
+          "uuid_proceso": "189",
+          "nombre": "Gobernador",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "190",
+          "nombre": "Diputados MR",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "191",
+          "nombre": "Ayuntamientos",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "192",
+          "nombre": "Juntas Municipales",
+          "estatus": 1
+        },
+        {
+          "uuid_proceso": "193",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -538,30 +1274,30 @@
     {
       "uuid_seccion": 41,
       "tipo_casilla": "BÁSICA",
-      "nombre": "13 B",
+      "nombre": "34 B",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "194",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "195",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "196",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "197",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "198",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -570,30 +1306,30 @@
     {
       "uuid_seccion": 42,
       "tipo_casilla": "CONTIGUA",
-      "nombre": "13 C1",
+      "nombre": "34 C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "199",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "200",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "201",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "202",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "203",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -602,30 +1338,30 @@
     {
       "uuid_seccion": 43,
       "tipo_casilla": "BÁSICA",
-      "nombre": "14 B",
+      "nombre": "35 B",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "204",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "205",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "206",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "207",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "208",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -634,30 +1370,30 @@
     {
       "uuid_seccion": 44,
       "tipo_casilla": "CONTIGUA",
-      "nombre": "14 C1",
+      "nombre": "35 C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "209",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "210",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "211",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "212",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "213",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -666,30 +1402,30 @@
     {
       "uuid_seccion": 45,
       "tipo_casilla": "BÁSICA",
-      "nombre": "15 B",
+      "nombre": "36 B",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "214",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "215",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "216",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "217",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "218",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -698,30 +1434,30 @@
     {
       "uuid_seccion": 46,
       "tipo_casilla": "CONTIGUA",
-      "nombre": "15 C1",
+      "nombre": "36 C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "219",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "220",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "221",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "222",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "223",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -730,30 +1466,30 @@
     {
       "uuid_seccion": 47,
       "tipo_casilla": "BÁSICA",
-      "nombre": "16 B",
+      "nombre": "37 B",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "224",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "225",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "226",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "227",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "228",
           "nombre": "Diputados RP",
           "estatus": 1
         }
@@ -762,862 +1498,126 @@
     {
       "uuid_seccion": 48,
       "tipo_casilla": "CONTIGUA",
-      "nombre": "16 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 57,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "19 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 58,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "19 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 59,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "20 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 60,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "20 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 61,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "21 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 62,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "21 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 63,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "21 C2",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 64,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "22 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 65,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "22 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 66,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "23 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 67,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "23 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 81,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "32 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 82,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "32 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 83,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "33 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 84,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "33 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 85,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "34 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 86,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "34 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 87,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "35 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 88,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "35 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 89,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "36 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 90,
-      "tipo_casilla": "CONTIGUA",
-      "nombre": "36 C1",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 91,
-      "tipo_casilla": "BÁSICA",
-      "nombre": "37 B",
-      "proceso": [
-        {
-          "uuid_proceso": "1",
-          "nombre": "Gobernador",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "2",
-          "nombre": "Diputados MR",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "3",
-          "nombre": "Ayuntamientos",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "4",
-          "nombre": "Juntas Municipales",
-          "estatus": 1
-        },
-        {
-          "uuid_proceso": "5",
-          "nombre": "Diputados RP",
-          "estatus": 1
-        }
-      ]
-    },
-    {
-      "uuid_seccion": 92,
-      "tipo_casilla": "CONTIGUA",
       "nombre": "37 C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "229",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "230",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "231",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "232",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "233",
           "nombre": "Diputados RP",
           "estatus": 1
         }
       ]
     },
     {
-      "uuid_seccion": 98,
+      "uuid_seccion": 49,
       "tipo_casilla": "BÁSICA",
       "nombre": "40 B",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "234",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "235",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "236",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "237",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "238",
           "nombre": "Diputados RP",
           "estatus": 1
         }
       ]
     },
     {
-      "uuid_seccion": 99,
+      "uuid_seccion": 50,
       "tipo_casilla": "CONTIGUA",
       "nombre": "40 C1",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "239",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "240",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "241",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "242",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "243",
           "nombre": "Diputados RP",
           "estatus": 1
         }
       ]
     },
     {
-      "uuid_seccion": 100,
+      "uuid_seccion": 51,
       "tipo_casilla": "BÁSICA",
       "nombre": "41 B",
       "proceso": [
         {
-          "uuid_proceso": "1",
+          "uuid_proceso": "244",
           "nombre": "Gobernador",
           "estatus": 1
         },
         {
-          "uuid_proceso": "2",
+          "uuid_proceso": "245",
           "nombre": "Diputados MR",
           "estatus": 1
         },
         {
-          "uuid_proceso": "3",
+          "uuid_proceso": "246",
           "nombre": "Ayuntamientos",
           "estatus": 1
         },
         {
-          "uuid_proceso": "4",
+          "uuid_proceso": "247",
           "nombre": "Juntas Municipales",
           "estatus": 1
         },
         {
-          "uuid_proceso": "5",
+          "uuid_proceso": "248",
           "nombre": "Diputados RP",
           "estatus": 1
         }

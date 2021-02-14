@@ -3,11 +3,14 @@ import 'dart:io';
 
 import 'package:app_example/models/usuario.dart';
 import 'package:app_example/preference/preferencias_usuario.dart';
+import 'package:app_example/providers/db_providers.dart';
+import 'package:app_example/services/db_information.dart';
 
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class MainPage extends StatefulWidget {
@@ -73,11 +76,15 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    //final db  = Provider.of<DbInformation>(context, listen: false);
+    //db.fillDb();
+    print("sam");
+    //_checkAndInsertData();
     final usuario = loadStudent();
     final prefs = new PreferenciasUsuario();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Demo App"),
+        title: Text("PREP Casilla"),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.account_circle),
@@ -101,10 +108,11 @@ class _MainPageState extends State<MainPage> {
       body: FutureBuilder(
         future: loadStudent(),
         builder: (BuildContext context, AsyncSnapshot<Usuario> snapshot) {
-          print(snapshot.data);
+          
           if (snapshot.hasData) {
+             
             this.usuarios = snapshot.data;
-           return SmartRefresher(
+            return SmartRefresher(
               controller: _refreshController,
               enablePullDown: true,
               onRefresh: _loadInformation,
@@ -114,7 +122,14 @@ class _MainPageState extends State<MainPage> {
               ),
               child: _listViewElements(),
             );
-          }else{
+            /** 
+            final element = snapshot.data;
+            if(element.length ==0){ 
+              return Center(child:Text('no hay informacion'));
+            }
+            return Center(child: Text('samuel'),);
+            */
+          } else {
             return Center(
               child: Text('Cargando...'),
             );
@@ -186,5 +201,9 @@ class _MainPageState extends State<MainPage> {
     loadStudent();
     await Future.delayed(Duration(milliseconds: 1000));
     _refreshController.refreshCompleted();
+  }
+
+  _checkAndInsertData() async {
+    return DBProvider.db.getAllScans();
   }
 }

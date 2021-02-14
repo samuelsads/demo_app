@@ -8,6 +8,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'package:mime_type/mime_type.dart';
 import 'package:http_parser/http_parser.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 class AccountPage extends StatefulWidget {
@@ -38,10 +39,34 @@ class _AccountPageState extends State<AccountPage> {
             child: Form(
                 key: formKey,
                 child: Column(
-                  children: <Widget>[_viewPhotos(), _buttonPhoto()],
+                  children: <Widget>[_viewPhotos(),Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                       _buttonPhoto(),_buttonSendPhoto()
+                    ],
+                  )],
                 ))),
       ),
     );
+  }
+  Widget _buttonSendPhoto(){
+    return RaisedButton.icon(
+        onPressed: () => _sendPhoto(),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+        icon: Icon(Icons.send),
+        color: Colors.deepPurple,
+        textColor: Colors.white,
+        label: Text('Enviar foto'));
+
+  }
+
+  _sendPhoto() async{
+    await subirImagen(foto, proceso.uuidProceso);
+      final photoService = Provider.of<PhotoService>(context, listen: false);
+      photoService.getUid = proceso.uuidProceso;
+      photoService.getUid;
+      Navigator.of(context).pop();
   }
 
   Widget _buttonPhoto() {
@@ -69,13 +94,13 @@ class _AccountPageState extends State<AccountPage> {
       source: type,
     );
 
-    if (pickedFile.path != null) {
+    if (pickedFile != null && pickedFile.path != null) {
       foto = File(pickedFile.path);
-      await subirImagen(foto, proceso.uuidProceso);
-      final photoService = Provider.of<PhotoService>(context, listen: false);
-      photoService.getUid = proceso.uuidProceso;
-      photoService.getUid;
-      //Navigator.of(context).pop();
+      Directory dir = await getApplicationDocumentsDirectory();
+      print(dir.path);
+      final String path = dir.path;
+      final File newImage = await foto.copy('$path/image1.png');
+      foto = newImage;
     }
 
     setState(() {});
@@ -86,6 +111,11 @@ class _AccountPageState extends State<AccountPage> {
   Future<String> subirImagen(File imagen, String uid) async {
     //final url = Uri.parse(
     //    'http://192.168.1.77:3000');
+
+  DateTime now = DateTime.now();
+  final currentTime = new DateTime(now.year, now.month, now.day, now.hour, now.minute, now.second);
+  //current time
+  print(currentTime);
     final url = Uri.parse(
         'http://gfhjk-env.eba-mpvxbqa4.us-east-1.elasticbeanstalk.com/file');
     final mimeType = mime(imagen.path).split('/');

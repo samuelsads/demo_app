@@ -5,6 +5,7 @@ import 'package:app_example/widgets/custom_input.dart';
 import 'package:app_example/widgets/custom_logo.dart';
 import 'package:app_example/widgets/label.dart';
 import 'package:flutter/material.dart';
+import 'package:imei_plugin/imei_plugin.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key key}) : super(key: key);
@@ -12,29 +13,27 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       backgroundColor: Color(0xffF2F2F2),
-       body: SafeArea(
-         child: SingleChildScrollView(
-           physics: BouncingScrollPhysics(),
-           child: Container(
-            height: MediaQuery.of(context).size.height *0.9,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                CustomLogo(
-                    image: AssetImage('assets/tag-logo.png'),
-                    text: 'Demo'),
-                _FormState(),
-                Text(
-                  'Términos y condiciones de uso',
-                  style: TextStyle(),
-                )
-              ],
-            ),
-          )
-         ),
-       )
-    );
+        backgroundColor: Color(0xffF2F2F2),
+        body: SafeArea(
+          child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.9,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    CustomLogo(
+                        image: AssetImage('assets/tag-logo.png'),
+                        text: 'PREP Casilla'),
+                    _FormState(),
+                    Text(
+                      'Términos y condiciones de uso',
+                      style: TextStyle(),
+                    )
+                  ],
+                ),
+              )),
+        ));
   }
 }
 
@@ -48,7 +47,7 @@ class __FormStateState extends State<_FormState> {
   final passCtrl = TextEditingController();
   @override
   Widget build(BuildContext context) {
- final prefs= new PreferenciasUsuario();
+    final prefs = new PreferenciasUsuario();
 
     return Container(
       margin: EdgeInsets.only(top: 40),
@@ -69,14 +68,18 @@ class __FormStateState extends State<_FormState> {
         //TODO: CREAR BOTON
         BlueBotton(
           text: 'Ingrese',
-          onPressed:  () {
-            final user  = emailCtrl.text.trim();
-            final pass  = passCtrl.text.trim();
-            if(user  == "admin" && pass == "123456"){
-              prefs.token  ='1';
+          onPressed: () async {
+            final user = emailCtrl.text.trim();
+            final pass = passCtrl.text.trim();
+
+            if (user == "admin" && pass == "123456") {
+              // se obtiene el imei
+              String imei = await ImeiPlugin.getImei(shouldShowRequestPermissionRationale: false);
+              prefs.token = '1';
               Navigator.pushReplacementNamed(context, 'main');
-            }else{
-              mostrarAlerta(context, "Credenciales incorrectas", "Su usuario o su contraseña son incorrectos");
+            } else {
+              mostrarAlerta(context, "Credenciales incorrectas",
+                  "Su usuario o su contraseña son incorrectos");
             }
           },
         ),

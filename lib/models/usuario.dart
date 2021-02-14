@@ -69,21 +69,25 @@ class Proceso {
         this.uuidProceso,
         this.nombre,
         this.estatus,
+        this.uuidSeccion,
     });
 
     String uuidProceso;
     String nombre;
     int estatus;
+    int uuidSeccion;
 
     factory Proceso.fromJson(Map<String, dynamic> json) => Proceso(
         uuidProceso: json["uuid_proceso"],
         nombre: json["nombre"],
         estatus: json["estatus"],
+        uuidSeccion : json["uuid_seccion"]
     );
 
     Map<String, dynamic> toJson() => {
         "uuid_proceso": uuidProceso,
         "nombre": nombre,
         "estatus": estatus,
+        "uuid_seccion":uuidSeccion,
     };
 }

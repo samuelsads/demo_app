@@ -15,8 +15,8 @@ class CustomLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: EdgeInsets.only(top: 40),
-        width: 170,
+        margin: EdgeInsets.only(top: 90),
+        width: 250,
         child: Column(
           children: <Widget>[
             Image(image: this.image),

@@ -1,5 +1,6 @@
 import 'package:app_example/preference/preferencias_usuario.dart';
 import 'package:app_example/router/routes.dart';
+import 'package:app_example/services/db_information.dart';
 import 'package:app_example/services/photo_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => PhotoService()),
+        ChangeNotifierProvider(create: ( _ ) =>DbInformation(),),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
